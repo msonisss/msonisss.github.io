@@ -1,0 +1,198 @@
+/*__________1.ФОН И ШАПКА_________*/
+body{
+background: #c7b39b url(image/tekstura-tkan-materiia.jpg) repeat-x; /* Цвет фона и путь к файлу */  
+background-color:#ccc;
+}
+header {
+ display: block; /* Для старых браузеров */
+ height: 100px; /* Высота шапки */
+ background: url(image/dss.jpg) repeat-x center bottom;;
+}
+
+*
+{
+margin:0px ;
+padding:0px;
+}
+/*__________2.МЕНЮ_________*/
+.menu li
+{
+float:left; /*положение меню */
+list-style: none; /*стиль маркировки меню*/
+margin:10px 25px ; /*расстояния текста меню*/
+}
+.blok-menu
+{
+
+overflow: hidden; /*Отображается только область внутри элемента, остальное будет скрыто*/
+background: #444; /*цвет блока меню*/
+box-shadow: 0px 13px 17px -6px #000000; /*тень */
+}
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: black;
+    background-color: #ссс;
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background-color: black;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 37px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ссс;
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: black;
+    background-color: #ссс;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+.menu
+{
+position: absolute;
+display:inline-block;
+padding: 14px;
+margin-top: 35px;
+top:100px;
+/* height: 1200px; */
+}
+.menu li a
+{
+font: 20px Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; /*размер текста в меню */
+color:black;
+text-decoration: none;
+border-bottom:1px dotted rgba(0,0,0,0);
+transition: transform 1s;
+}
+.menu li a:hover
+{ transform:scale(1.2);
+/* font: 20px Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; */ /*размер текста при наведении*/
+color:#ccc;
+border-bottom:1px dotted #ccc;
+}
+/*__________3.ЛОГОТИП_________*/
+.logo
+{
+margin:0 auto;
+width:200px;
+margin-top:30px;
+margin-bottom:30px;
+}
+
+.logo img
+{
+-moz-border-radius: 200px; /* Firefox */
+-webkit-border-radius: 200px; /* Safari, Google Chrome */
+-khtml-border-radius: 200px; /* KHTML */
+-o-border-radius: 200px; /* Opera */
+-ms-border-radius: 200px; /* IE8 */
+-icab-border-radius: 200px; /* Icab */
+border-radius: 200px; /* CSS3 */
+}
+/*__________4.БЛОКИ С ТЕКСТОМ_________*/
+.content /*блок с текстом */
+{
+background: #fff;
+width:700px;
+margin:0 auto;
+padding:20px;
+box-shadow: 0 1px 4px rgba(0, 0, 0, .3), -23px 0 20px -23px rgba(0, 0, 0, .8), 23px 0 20px -23px rgba(0, 0, 0, .8), 0 0 40px rgba(0, 0, 0, .1) inset;
+}
+ .content1 {
+ background: #fff;
+width:1000px;
+margin:0 auto;
+padding:20px;
+box-shadow: 0 1px 4px rgba(0, 0, 0, .3), -23px 0 20px -23px rgba(0, 0, 0, .8), 23px 0 20px -23px rgba(0, 0, 0, .8), 0 0 40px rgba(0, 0, 0, .1) inset;
+ }
+
+.content h2
+{
+font: 30px Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+color:#444;
+text-align:center;
+}
+ 
+.content p
+{
+font: 20px Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+color:#444;
+text-indent:20px;
+padding-top:10px;
+}
+/*__________5.ПОДВАЛ_________*/
+.footer
+{
+width:100%;
+text-align:center;
+margin-top:20px;
+}
+.footer p, .footer a
+{
+font: 14px Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+color:#444;
+}
+ 
+.footer a
+{
+text-decoration: none;
+border-bottom:1px dotted #444;
+}
+ 
+.footer a:hover
+{
+text-decoration: none;
+border:0px;
+}
+/*__________6.ИЗОБРАЖЕНИЯ С ПОДПИСЬЮ_________*/
+figure img {
+  border: 1px solid #666;
+  background-color: #FFF;
+  padding: 4px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+figcaption {
+  font: 1.1em Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+
+figure {
+  display: inline-block;
+  vertical-align: top;
+  width: 210px;
+  margin: 0 10px 10px 10px;
+}
+
